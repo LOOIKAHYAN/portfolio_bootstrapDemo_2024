@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/png" href="../images/demo.png">
+    <link rel="stylesheet" href="../css/card.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <title>Icon</title>
+    <style>
+        .icon table, td, th{
+            border: none;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+ 
+
+    <nav class="navbar navbar-expand-lg" style="background-color: rgb(211, 158, 206); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../images/demo.png" style="width: 45px; border-radius: 10px; margin-left: 10px;"><span style="padding-left: 10px; padding-right: 30px; font-weight: bold;">Bootstrap Demo</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="carousel.html">Carousel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="icon.html">Icon</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="button.html">Button</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="list_group.html">List Group</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="dropdowns.html">Dropdowns</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Media
+                </a>
+                <ul class="dropdown-menu" style="background-color: rgb(211, 158, 206);">
+                  <li><a class="dropdown-item" href="../media/image.html">Image</a></li>
+                  <li><a class="dropdown-item" href="../media/audio.html">Audio</a></li>
+                  <li><a class="dropdown-item" href="../media/video.html">Video</a></li>
+                </ul>
+              </li>
+            </ul>
+            <button id="theme-toggle" class="btn btn-primary" style="margin-right: 20px; background-color: rgb(151, 55, 158); border: none;">
+              <i id="theme-icon" class="bi emoji bi-droplet-half"></i></button>
+          </div>
+        </div>
+      </nav>
+
+      <h1 style="text-align: center; margin: 100px 0 30px 0;">Icon</h1>
+
+      <div style="margin: 0 40px 60px 40px; text-align: center;" class="icon" >
+        <section style="width: 100%;">
+        <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+            <div style="margin-right: 20px;">
+            <p>
+                <button style="width: 200px;" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#icon1" aria-expanded="false" aria-controls="icon1">
+                Angry
+                </button>
+            </p>
+            <div style="min-height: 120px;">
+                <div class="collapse collapse-horizontal" id="icon1">
+                <div class="card card-body" style="width: 200px; margin: auto;">
+                    <i style="font-size: 40px;" class="bi bi-emoji-angry">
+                    <span style="font-size: 40px;" class="bi bi-emoji-angry-fill"></span>
+                    </i>
+                </div>
+                </div>
+            </div>
+        </div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+            <div style="margin-right: 20px;">
+                    <p>
+                        <button style="width: 200px; margin: auto;" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#icon2" aria-expanded="false" aria-controls="icon2">
+                       Astonished
+                        </button>
+                    </p>
+                    <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="icon2">
+                        <div class="card card-body" style="width: 200px; margin: auto;">
+                            <i style="font-size: 40px;" class="bi bi-emoji-astonished">
+                            <span style="font-size: 40px;" class="bi bi-emoji-astonished-fill"></span>
+                            </i>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+            <div style="margin-right: 20px;">
+                    <p>
+                        <button style="width: 200px; margin: auto;" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#icon3" aria-expanded="false" aria-controls="icon3">
+                       Dizzy
+                        </button>
+                    </p>
+                    <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="icon3">
+                        <div class="card card-body" style="width: 200px; margin: auto;">
+                            <i style="font-size: 40px;" class="bi bi-emoji-dizzy">
+                                <span style="font-size: 40px;" class="bi bi-emoji-dizzy-fill"></span>
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+            <div style="margin-right: 20px;">
+                    <p>
+                        <button style="width: 200px; margin: auto;" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#icon4" aria-expanded="false" aria-controls="icon4">
+                        Expressionless
+                        </button>
+                    </p>
+                    <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="icon4">
+                        <div class="card card-body" style="width: 200px; margin: auto;">
+                            <i style="font-size: 40px;" class="bi bi-emoji-expressionless">
+                                <span style="font-size: 40px;" class="bi bi-emoji-expressionless-fill"></span>
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+            <div style="margin-right: 20px;">
+                    <p>
+                        <button style="width: 200px; margin: auto;" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#icon5" aria-expanded="false" aria-controls="icon5">
+                        Frown
+                        </button>
+                    </p>
+                    <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="icon5">
+                        <div class="card card-body" style="width: 200px; margin: auto;">
+                            <i style="font-size: 40px;" class="bi bi-emoji-frown">
+                                <span style="font-size: 40px;" class="bi bi-emoji-frown-fill"></span>
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section style="width: 100%;">
+            <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+            <div style="margin-right: 20px;">
+                    <p>
+                        <button style="width: 200px;" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#icon6" aria-expanded="false" aria-controls="icon6">
+                        Grimace
+                        </button>
+                    </p>
+                    <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="icon6">
+                        <div class="card card-body" style="width: 200px; margin: auto;">
+                            <i style="font-size: 40px;" class="bi bi-emoji-grimace">
+                                <span style="font-size: 40px;" class="bi bi-emoji-grimace-fill"></span>
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+            <div style="margin-right: 20px;">
+                    <p>
+                        <button style="width: 200px; margin: auto;" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#icon7" aria-expanded="false" aria-controls="icon7">
+                        Grin
+                        </button>
+                    </p>
+                    <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="icon7">
+                        <div class="card card-body" style="width: 200px; margin: auto;">
+                            <i style="font-size: 40px;" class="bi bi-emoji-grin">
+                                <span style="font-size: 40px;" class="bi bi-emoji-grin-fill"></span>
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+            <div style="margin-right: 20px;">
+                    <p>
+                        <button style="width: 200px; margin: auto;" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#icon8" aria-expanded="false" aria-controls="icon8">
+                        Heart Eyes
+                        </button>
+                    </p>
+                    <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="icon8">
+                        <div class="card card-body" style="width: 200px; margin: auto;">
+                            <i style="font-size: 40px;" class="bi bi-emoji-heart-eyes">
+                                <span style="font-size: 40px;" class="bi bi-emoji-heart-eyes-fill"></span>
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+            <div style="margin-right: 20px;">
+                    <p>
+                        <button style="width: 200px; margin: auto;" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#icon9" aria-expanded="false" aria-controls="icon9">
+                        Kiss
+                        </button>
+                    </p>
+                    <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="icon9">
+                        <div class="card card-body" style="width: 200px; margin: auto;">
+                            <i style="font-size: 40px;" class="bi bi-emoji-kiss">
+                                <span style="font-size: 40px;" class="bi bi-emoji-kiss-fill"></span>
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+            <div style="margin-right: 20px;">
+                    <p>
+                        <button style="width: 200px; margin: auto;" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#icon10" aria-expanded="false" aria-controls="icon10">
+                        Laughing
+                        </button>
+                    </p>
+                    <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="icon10">
+                        <div class="card card-body" style="width: 200px; margin: auto;">
+                            <i style="font-size: 40px;" class="bi bi-emoji-laughing">
+                                <span style="font-size: 40px;" class="bi bi-emoji-laughing-fill"></span>
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section style="width: 100%;">
+            <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                <div style="margin-right: 20px;">
+                    <p>
+                        <button style="width: 200px;" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#icon11" aria-expanded="false" aria-controls="icon11">
+                        Neutral
+                        </button>
+                    </p>
+                    <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="icon11">
+                            <div class="card card-body" style="width: 200px; margin: auto;">
+                                <i style="font-size: 40px;" class="bi bi-emoji-neutral">
+                                <span style="font-size: 40px;" class="bi bi-emoji-neutral-fill"></span>
+                            </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                <div style="margin-right: 20px;">
+                <p>
+                    <button style="width: 200px; margin: auto;" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#icon12" aria-expanded="false" aria-controls="icon12">
+                    Smile
+                    </button>
+                </p>
+                <div style="min-height: 120px;">
+                    <div class="collapse collapse-horizontal" id="icon12">
+                        <div class="card card-body" style="width: 200px; margin: auto;">
+                            <i style="font-size: 40px;" class="bi bi-emoji-smile">
+                            <span style="font-size: 40px;" class="bi bi-emoji-smile-fill"></span>
+                        </i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                <div style="margin-right: 20px;">
+                <p>
+                    <button style="width: 200px; margin: auto;" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#icon13" aria-expanded="false" aria-controls="icon13">
+                    Smile Upside Down
+                    </button>
+                </p>
+                <div style="min-height: 120px;">
+                    <div class="collapse collapse-horizontal" id="icon13">
+                        <div class="card card-body" style="width: 200px; margin: auto;">
+                            <i style="font-size: 40px;" class="bi bi-emoji-smile-upside-down">
+                            <span style="font-size: 40px;" class="bi bi-emoji-smile-upside-down-fill"></span>
+                        </i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                <div style="margin-right: 20px;">
+                <p>
+                    <button style="width: 200px; margin: auto;" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#icon14" aria-expanded="false" aria-controls="icon14">
+                    Sunglasses
+                    </button>
+                </p>
+                <div style="min-height: 120px;">
+                    <div class="collapse collapse-horizontal" id="icon14">
+                        <div class="card card-body" style="width: 200px; margin: auto;">
+                            <i style="font-size: 40px;" class="bi bi-emoji-sunglasses">
+                            <span style="font-size: 40px;" class="bi bi-emoji-sunglasses-fill"></span>
+                        </i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                <div style="margin-right: 20px;">
+                <p>
+                    <button style="width: 200px; margin: auto;" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#icon15" aria-expanded="false" aria-controls="icon15">
+                    Surprise
+                    </button>
+                </p>
+                <div style="min-height: 120px;">
+                    <div class="collapse collapse-horizontal" id="icon15">
+                        <div class="card card-body" style="width: 200px; margin: auto;">
+                            <i style="font-size: 40px;" class="bi bi-emoji-surprise">
+                            <span style="font-size: 40px;" class="bi bi-emoji-surprise-fill"></span>
+                        </i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+
+    <footer style="position: fixed; bottom: 0; background-color: rgb(236, 215, 255); width: 100%; text-align: center; padding: 5px 0;">
+        <i class="bi bi-bootstrap"><span style="margin-left: 5px; font-style: italic;">Bootstrap 2024</span></i>
+    </footer>
+
+    <script src="../js/function.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

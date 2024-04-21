@@ -1,0 +1,9 @@
+.card {
+    background: linear-gradient(to right, rgb(218, 244, 255), rgb(134, 186, 232));
+}
+.card-img-top {
+    transition: transform 0.2s ease-in-out;
+}
+.card-img-top:hover {
+    transform: scale(0.8);
+}

@@ -1,0 +1,23 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    height: 70px;
+}
+.navbar-brand {
+    transition: transform 0.3s ease-in-out;
+}
+.navbar-brand img:hover {
+    transform: scale(1.2);
+}
+.nav-link {
+    font-weight: 600;
+}
+.nav-link:hover, .dropdown-item:hover {
+    background-color: rgb(164, 117, 207);
+}
+.dropdown-item {
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

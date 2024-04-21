@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/png" href="../images/demo.png">
+    <link rel="stylesheet" href="../css/card.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <title>Image</title>
+    <style>
+        .weblogo img {
+            transition: transform 0.1s ease-in;
+            border-radius: 20px;
+        }
+        .weblogo img:hover, .change {
+            transform: translate(-10px, -10px);
+            box-shadow: 2px 2px 10px darkgrey;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg" style="background-color: rgb(211, 158, 206); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../images/demo.png" style="width: 45px; border-radius: 10px; margin-left: 10px;"><span style="padding-left: 10px; padding-right: 30px; font-weight: bold;">Bootstrap Demo</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../section/carousel.html">Carousel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../section/icon.html">Icon</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../section/button.html">Button</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="../section/list_group.html">List Group</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../section/dropdowns.html">Dropdowns</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Media
+                </a>
+                <ul class="dropdown-menu" style="background-color: rgb(211, 158, 206);">
+                  <li><a class="dropdown-item" href="image.html">Image</a></li>
+                  <li><a class="dropdown-item" href="audio.html">Audio</a></li>
+                  <li><a class="dropdown-item" href="video.html">Video</a></li>
+                </ul>
+              </li>
+            </ul>
+            <button id="theme-toggle" class="btn btn-primary" style="margin-right: 20px; background-color: rgb(151, 55, 158); border: none;">
+              <i id="theme-icon" class="bi bi-droplet-half"></i></button>
+          </div>
+        </div>
+      </nav>
+
+      <h1 style="text-align: center; margin: 100px 0 30px 0;">Image</h1>
+
+      <div style="margin: 0 40px 60px 40px; text-align: center;" class="icon" >
+
+        <section style="width: 100%; margin-bottom: 20px;" class="weblogo">
+            <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                <div style="border: 2px dotted grey; margin-right: 20px;">
+                    <img style="width: 150px; height: 150px;" src="../images/arcgis.jpeg" onclick="changeDisplay(this)" class="img-thumbnail" alt="...">
+                    <h5 style="width: 150px; padding-top: 5px; margin-bottom:0; height: 40px; border-top: 2px dotted grey; background-color: lightgrey;">ArcGis</h5>
+                </div>
+         
+            <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                <div style="border: 2px dotted grey; margin-right: 20px;">
+                    <img style="width: 150px; height: 150px;" src="../images/bootstrap.png" onclick="changeDisplay(this)" class="img-thumbnail" alt="...">
+                    <h5 style="width: 150px; padding-top: 5px; margin-bottom:0; height: 40px; border-top: 2px dotted grey; background-color: lightgrey;">Bootstrap</h5>
+                </div>
+       
+            <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                <div style="border: 2px dotted grey; margin-right: 20px;">
+                    <img style="width: 150px; height: 150px;" src="../images/c++.png" onclick="changeDisplay(this)" class="img-thumbnail" alt="...">
+                    <h5 style="width: 150px; padding-top: 5px; margin-bottom:0; height: 40px; border-top: 2px dotted grey; background-color: lightgrey;">C++</h5>
+                </div>
+            
+            <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                <div style="border: 2px dotted grey; margin-right: 20px;">
+                    <img style="width: 150px; height: 150px;" src="../images/css.png" onclick="changeDisplay(this)" class="img-thumbnail" alt="...">
+                        <h5 style="width: 150px; padding-top: 5px; margin-bottom:0; height: 40px; border-top: 2px dotted grey; background-color: lightgrey;">CSS</h5>
+                </div>
+
+            <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                <div style="border: 2px dotted grey; margin-right: 20px;">
+                    <img style="width: 150px; height: 150px;" src="../images/html.png" onclick="changeDisplay(this)" class="img-thumbnail" alt="...">
+                    <h5 style="width: 150px; padding-top: 5px; margin-bottom:0; height: 40px; border-top: 2px dotted grey; background-color: lightgrey;">HTML</h5>
+                </div>
+            </div>
+        </section>
+      
+        <section style="width: 100%;" class="weblogo">
+            <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                <div style="border: 2px dotted grey; margin-right: 20px;">
+                    <img style="width: 150px; height: 150px; border: none;" src="../images/java.png" onclick="changeDisplay(this)" class="img-thumbnail" alt="...">
+                    <h5 style="width: 150px; padding-top: 5px; margin-bottom:0; height: 40px; border-top: 2px dotted grey; background-color: lightgrey;">Java</h5>
+                </div>
+         
+            <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                <div style="border: 2px dotted grey; margin-right: 20px;">
+                    <img style="width: 150px; height: 150px;" src="../images/js.png" onclick="changeDisplay(this)" class="img-thumbnail" alt="...">
+                    <h5 style="width: 150px; padding-top: 5px; margin-bottom:0; height: 40px; border-top: 2px dotted grey; background-color: lightgrey;">JavaScript</h5>
+                </div>
+       
+            <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                <div style="border: 2px dotted grey; margin-right: 20px;">
+                    <img style="width: 150px; height: 150px;" src="../images/node.png" onclick="changeDisplay(this)" class="img-thumbnail" alt="...">
+                    <h5 style="width: 150px; padding-top: 5px; margin-bottom:0; height: 40px; border-top: 2px dotted grey; background-color: lightgrey;">Node</h5>
+                </div>
+            
+            <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                <div style="border: 2px dotted grey; margin-right: 20px;">
+                    <img style="width: 150px; height: 150px;" src="../images/python.jpeg" onclick="changeDisplay(this)" class="img-thumbnail" alt="...">
+                    <h5 style="width: 150px; padding-top: 5px; margin-bottom:0; height: 40px; border-top: 2px dotted grey; background-color: lightgrey;">Python</h5>
+                </div>
+
+            <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                <div style="border: 2px dotted grey; margin-right: 20px;">
+                    <img style="width: 150px; height: 150px;" src="../images/react.png" onclick="changeDisplay(this)" class="img-thumbnail" alt="...">
+                    <h5 style="width: 150px; padding-top: 5px; margin-bottom:0; height: 40px; border-top: 2px dotted grey; background-color: lightgrey;">React</h5>
+                </div>
+            </div>
+        </section>
+      </div>
+      
+    <footer style="position: fixed; bottom: 0; background-color: rgb(236, 215, 255); width: 100%; text-align: center; padding: 5px 0;">
+        <i class="bi bi-bootstrap"><span style="margin-left: 5px; font-style: italic;">Bootstrap 2024</span></i>
+    </footer>
+
+    <script src="../js/function.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
